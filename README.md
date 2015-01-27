@@ -1,89 +1,43 @@
-Yii 2 Basic Application Template
-================================
+Yii2 Basic Demo
+===================================
 
-Yii 2 Basic Application Template is a skeleton Yii 2 application best for
-rapidly creating small projects.
+定期更新的 Yii2 Basic 完整包，下载直接可以运行(已经`composer install`了,也就是已经有了vendor目录)。
 
-The template contains the basic features including user login/logout and a contact page.
-It includes all commonly used configurations that would allow you to focus on adding new
-features to your application.
+- 主要解决的问题：
 
+    - 不会用`composer`或者不太会用；
+    - `composer` 装不上或者装上了但是`composer install`特别慢。
 
-DIRECTORY STRUCTURE
--------------------
-
-      assets/             contains assets definition
-      commands/           contains console commands (controllers)
-      config/             contains application configurations
-      controllers/        contains Web controller classes
-      mail/               contains view files for e-mails
-      models/             contains model classes
-      runtime/            contains files generated during runtime
-      tests/              contains various tests for the basic application
-      vendor/             contains dependent 3rd-party packages
-      views/              contains view files for the Web application
-      web/                contains the entry script and Web resources
+- 更新频率：
+    > 不定时
 
 
-
-REQUIREMENTS
-------------
-
-The minimum requirement by this application template that your Web server supports PHP 5.4.0.
-
-
-INSTALLATION
-------------
-
-### Install from an Archive File
-
-Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
-a directory named `basic` that is directly under the Web root.
-
-You can then access the application through the following URL:
-
-~~~
-http://localhost/basic/web/
-~~~
+# 使用
+1. 使用 git 克隆一份项目 `git clone https://github.com/iiYii/yii2-basic-demo.git`
+1. 如果 GitHub 网速慢可以使用[开源中国的源](http://git.oschina.net/forecho/yii2-basic-demo) `git clone https://git.oschina.net/forecho/yii2-basic-demo.git`
+3. 创建一个新的数据库，修改 `config/db.php` 中相应的数据库配置
+3. 配置你的 Apache  `/yii2-basic-demo/web/` ，访问URL为 http://www.xxx.com/
 
 
-### Install via Composer
+## 赞助:dollar:
+如果您觉得对你有帮助愿意捐助的话可以：
 
-If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
-at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
+1. 我的支付宝：caizhenghai@gmail.com
+2. 扫二维码直接捐助 
+    - ![支付宝即是到账](http://ww4.sinaimg.cn/bmiddle/4cc5f9b3jw1edgpp0u6joj207i07imy4.jpg)
+3. 加我微信，转账捐助 
+    - ![微信支付](http://ww3.sinaimg.cn/bmiddle/4cc5f9b3gw1eonw0fs4c0j20fl0ltjt8.jpg)
 
-You can then install this application template using the following command:
+请留下您的联系方式，感谢！
 
-~~~
-php composer.phar global require "fxp/composer-asset-plugin:1.0.0-beta4"
-php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-basic basic
-~~~
+感谢以下朋友的赞助：
 
-Now you should be able to access the application through the following URL, assuming `basic` is the directory
-directly under the Web root.
+<table>
+<tr><th>名称</th><th>金额</th></tr>
+<tr><td> 没有人赞助 <a href="#">@没有人</a></td><td>￥100</td></tr>
+</table>
 
-~~~
-http://localhost/basic/web/
-~~~
+## 更多关于Yii2
 
-
-CONFIGURATION
--------------
-
-### Database
-
-Edit the file `config/db.php` with real data, for example:
-
-```php
-return [
-    'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
-    'username' => 'root',
-    'password' => '1234',
-    'charset' => 'utf8',
-];
-```
-
-**NOTE:** Yii won't create the database for you, this has to be done manually before you can access it.
-
-Also check and edit the other files in the `config/` directory to customize your application.
+- Yii 官方网站：[http://www.yiiframework.com](http://www.yiiframework.com)
+- 我们的网站：[http://www.getyii.com](http://www.getyii.com)
